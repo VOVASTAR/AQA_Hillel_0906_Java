@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lessons3;
+package ua.hillel.lessons.lesson3;
 
 public class ConditionExample {
     public static void main(String[] args) {

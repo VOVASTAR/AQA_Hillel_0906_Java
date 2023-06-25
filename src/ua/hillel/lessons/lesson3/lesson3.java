@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lessons3;
+package ua.hillel.lessons.lesson3;
 
 import static java.lang.Math.max;
 import static java.lang.Math.sqrt;

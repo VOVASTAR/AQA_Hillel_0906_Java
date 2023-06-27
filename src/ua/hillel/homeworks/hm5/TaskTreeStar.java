@@ -1,6 +1,6 @@
 package ua.hillel.homeworks.hm5;
 
-public class Task11_1 {
+public class TaskTreeStar {
     public static void main(String[] args) {
         array();
     }
@@ -16,7 +16,7 @@ public class Task11_1 {
                 if (j >= index && j < endIndex) {
                     System.out.print("* ");
                 } else {
-                    System.out.print("  ");
+                    System.out.print(" ");
                 }
             }
             System.out.println();

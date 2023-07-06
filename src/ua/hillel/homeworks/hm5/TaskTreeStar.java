@@ -16,7 +16,7 @@ public class TaskTreeStar {
                 if (j >= index && j < endIndex) {
                     System.out.print("* ");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
             }
             System.out.println();

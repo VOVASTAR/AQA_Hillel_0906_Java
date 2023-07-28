@@ -1,6 +1,4 @@
-package ua.hillel.lessons.lesson7;
-
-import java.sql.DataTruncation;
+package ua.hillel.lessons.lesson7String;
 
 public class SplitExam {
     public static void main(String[] args) {

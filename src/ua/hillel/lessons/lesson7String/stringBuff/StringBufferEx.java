@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson7.stringBuff;
+package ua.hillel.lessons.lesson7String.stringBuff;
 
 import java.util.Arrays;
 

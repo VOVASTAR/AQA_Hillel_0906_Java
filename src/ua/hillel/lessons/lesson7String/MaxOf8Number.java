@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson7;
+package ua.hillel.lessons.lesson7String;
 
 public class MaxOf8Number {
     public static void main(String[] args) {

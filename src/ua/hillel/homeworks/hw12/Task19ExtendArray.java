@@ -12,9 +12,8 @@ public class Task19ExtendArray {
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 4, 5, 6};
         for (int el : arrayExtend(a, 59)) {
-            System.out.println(el);
+            System.out.print(el + " ");
         }
-//        System.out.println(Arrays.toString(arrayExtend(a, 55)));
     }
 
     public static int[] arrayExtend(int[] array, int number) {

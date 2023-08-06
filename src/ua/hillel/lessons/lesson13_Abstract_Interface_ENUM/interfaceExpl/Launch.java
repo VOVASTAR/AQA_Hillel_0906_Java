@@ -8,6 +8,8 @@ public class Launch {
         taxiController.aboutTaxiCar(toyota);
         taxiController.aboutTaxiCar(bmw);
         taxiController.repairTaxi(bmw);
-    }
+        bmw.countWheels();
+        CarInter.staticSt();
 
+    }
 }

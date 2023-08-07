@@ -25,4 +25,8 @@ public class Bmw implements CarInter, Parts {
     public void changeParts() {
         System.out.println("Change parts");
     }
+
+    public void countWheels(){
+        System.out.println("Wheels are 4");
+    }
 }

@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson15.exception.customException;
+package ua.hillel.lessons.lesson15_Exception_List_Collection.exception.customException;
 
 public class MyException extends Exception{
 

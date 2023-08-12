@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson15.exception;
+package ua.hillel.lessons.lesson15_Exception_List_Collection.exception;
 
 import java.io.FileWriter;
 import java.io.IOException;

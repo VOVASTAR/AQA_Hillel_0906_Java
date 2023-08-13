@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson14.classes.anonymousClass;
+package ua.hillel.lessons.lesson14_InnerClasses_Block_Initialization.classes.anonymousClass;
 
 public class LaunchHillel {
     public static void main(String[] args) {

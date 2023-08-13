@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson14.classes.anonymousClass;
+package ua.hillel.lessons.lesson14_InnerClasses_Block_Initialization.classes.anonymousClass;
 
 public class MyClass {
     public void displayMessage(Message message) {

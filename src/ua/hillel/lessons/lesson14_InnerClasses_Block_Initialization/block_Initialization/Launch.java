@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson14.block_Initialization;
+package ua.hillel.lessons.lesson14_InnerClasses_Block_Initialization.block_Initialization;
 
 public class Launch {
     public static void main(String[] args) {

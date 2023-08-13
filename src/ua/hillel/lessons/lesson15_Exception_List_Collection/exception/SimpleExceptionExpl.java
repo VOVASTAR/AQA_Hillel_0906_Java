@@ -11,6 +11,7 @@ public class SimpleExceptionExpl {
         exceptionExample2();
         exceptionExample3();
     }
+
     static void exceptionExample3() {
         System.out.println("Input number");
         Scanner scanner = new Scanner(System.in);
@@ -22,6 +23,7 @@ public class SimpleExceptionExpl {
             System.out.println("Unknown happened");
         }
     }
+
     static void exceptionExample2() {
         System.out.println("Input number");
         Scanner scanner = new Scanner(System.in);
@@ -43,6 +45,8 @@ public class SimpleExceptionExpl {
             fileWriter.write("Hello");
         } catch (IOException u) {
             System.out.println("Open thread");
+        } finally {
+            System.out.println("Execute finally block");
         }
     }
 

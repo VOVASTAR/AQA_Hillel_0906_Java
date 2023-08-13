@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson14;
+package ua.hillel.lessons.lesson14_InnerClasses_Block_Initialization;
 
 public class VarArgs {
     public static void main(String[] args) {

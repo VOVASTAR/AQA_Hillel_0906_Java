@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson14.classes.innerClass;
+package ua.hillel.lessons.lesson14_InnerClasses_Block_Initialization.classes.innerClass;
 
 public class LocalMethodOuter {
 

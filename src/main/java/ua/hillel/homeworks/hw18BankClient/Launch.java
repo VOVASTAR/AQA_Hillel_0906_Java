@@ -10,7 +10,7 @@ public class Launch {
         company.takeMoney(150);
         company.addMoney(55);
 
-        Client fop=new IndividualBusinessman();
+        Client fop = new IndividualBusinessman();
         fop.getBalance();
         fop.addMoney(10000);
         System.out.println(fop.getBalance());

@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw18BankClient;
+package ua.hillel.homeworks.hw18BankClient.viaAbstract;
 
 public class IndividualPerson extends Client {
     public IndividualPerson() {
@@ -10,15 +10,12 @@ public class IndividualPerson extends Client {
 
     @Override
     public void addMoney(double sum) {
-        this.setBalance(sum);
-        System.out.println(this.getBalance() + " usd");
+        super.addMoney(sum);
     }
 
     @Override
     public void takeMoney(double sum) {
-        double takeOut = -sum;
-        this.setBalance(takeOut);
-        System.out.println(this.getBalance() + " usd");
+        super.takeMoney(sum);
     }
 
     @Override
@@ -26,6 +23,6 @@ public class IndividualPerson extends Client {
         System.out.println("У физических лиц :");
         System.out.println("    - пополнение происходит без комиссии.");
         System.out.println("    - снятие происходит без комиссии.");
-        System.out.println("Баланс равен " + this.getBalance() + " usd");
+        System.out.println("Баланс равен " + this.getAccountMoney() + " usd");
     }
 }

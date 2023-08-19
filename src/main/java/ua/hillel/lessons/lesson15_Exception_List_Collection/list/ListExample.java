@@ -17,15 +17,17 @@ public class ListExample {
         methodIndexOf();
     }
 
-    static List<String> myArrayList;
+    static ArrayList<String> myArrayList;
+    static LinkedList<String> myLinkedList;
 
     public static void methodIndexOf() {
         System.out.println(myArrayList.indexOf("Alex"));
+        System.out.println(myArrayList.lastIndexOf("Alex"));
         System.out.println(myArrayList.indexOf("Oleg"));
     }
 
     public static void methodRemoveByIndex() {
-        myArrayList.remove(1);
+        myArrayList.remove(0);
     }
 
     public static void methodRemoveByObject() {
@@ -41,8 +43,18 @@ public class ListExample {
         myArrayList = new ArrayList<>();
         myArrayList.add("Alex");
         myArrayList.add("Sergey");
+        myArrayList.add("Alex");
         myArrayList.add(1, "Vova");
     }
+
+    public static void linkedAdd() {
+        myLinkedList = new LinkedList<>();
+        myLinkedList.add("Alex");
+        myLinkedList.add("Sergey");
+        myLinkedList.add(1, "Vova");
+
+    }
+
 
     public static void methodGet() {
         String e = myArrayList.get(1);

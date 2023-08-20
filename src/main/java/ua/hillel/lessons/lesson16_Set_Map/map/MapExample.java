@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson16.set;
+package ua.hillel.lessons.lesson16_Set_Map.map;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package ua.hillel.lessons.lesson16.set;
+package ua.hillel.lessons.lesson16_Set_Map.set;
 
 import java.util.Set;
 import java.util.TreeSet;

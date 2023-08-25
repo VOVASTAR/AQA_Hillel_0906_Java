@@ -5,8 +5,12 @@ public class Launch {
 
         Burger burger = new Burger();
 
-        System.out.println(burger);
-        int e = burger.standartPrice + OptionalIngridients.SOUS.price;
-        System.out.println(e);
+//        System.out.println(burger);
+//        burger.takeOrder();
+        OrderController orderController = new OrderController();
+
+        orderController.takeOrder(burger);
+//        int e = burger.standartPrice + OptionalIngridients.SOUS.price;
+//        System.out.println(e);
     }
 }

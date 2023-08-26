@@ -4,41 +4,27 @@ import java.util.Scanner;
 
 public interface Waiter {
 
-    Scanner scanner = new Scanner(System.in);
+    Scanner scannerString = new Scanner(System.in);
 
-    public default int costAdditionalIngridients(String additionalIngridient) {
-        int cost = switch (additionalIngridient) {
-            case "1", "соус" -> OptionalIngridients.SOUS.price;
-            case "2", "сыр" -> OptionalIngridients.CHEESE.price;
-            case "3", "котлета" -> OptionalIngridients.CUTLET.price;
-            default -> throw new IllegalStateException("Unexpected value: " + additionalIngridient);
-        };
-        return cost;
-    }
-
-    public default int orderCost() {
-        System.out.println("Выбирите доп. ингредиенты для бургера! (1. Соус - 10, 2. Сыр - 20, 3. котлета - 30)");
-        String ingridient = scanner.nextLine().toLowerCase();
-        return costAdditionalIngridients(ingridient);
-    }
+    int costAdditionalIngridients();
 
     int getStandartPrice();
-    public default int takeOrder() {
+
+    default int orderCost() {
 
         boolean isOptional = false;
-        int orderSum = getStandartPrice() + orderCost();
+        int orderSum = getStandartPrice() + costAdditionalIngridients();
         int i = 2;
         while (!isOptional) {
-            System.out.println("Хотите ли добавить " + i + "-й ингредиент? Да или Нет");
+            System.out.println("Хотите ли добавить " + i + "-й ингредиент? Введите : Да или Нет");
             ++i;
-            String clientChoise = scanner.nextLine();
-            if (clientChoise.equalsIgnoreCase("да")) {
-                orderSum += orderCost();
-            } else {
-                isOptional = true;
+            String clientChoise = scannerString.nextLine().toLowerCase();
+            switch (clientChoise) {
+                case "да" -> orderSum += costAdditionalIngridients();
+                case "нет" -> isOptional = true;
+                default -> throw new IllegalStateException("Вы ввели некорректный ответ (да/нет)" + clientChoise);
             }
         }
         return orderSum;
-
     }
 }

@@ -2,11 +2,11 @@ package ua.hillel.homeworks.hw20Burger;
 
 public class Burger implements IBurger {
 
-    public final int burgerPrice = 50;
+    public final int BURGERPRICE = 50;
 
     @Override
     public int getStandartPrice() {
-        return this.burgerPrice;
+        return this.BURGERPRICE;
     }
 
     @Override

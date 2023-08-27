@@ -1,6 +1,6 @@
 package ua.hillel.homeworks.hw20Burger;
 
-public class Burger implements Waiter {
+public class Burger implements IBurger {
 
     public final int burgerPrice = 50;
 

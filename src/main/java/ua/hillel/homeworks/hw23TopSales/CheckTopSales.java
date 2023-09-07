@@ -40,29 +40,22 @@ public class CheckTopSales {
         WebElement sectionLaptopAndComputers = driver
                 .findElement(By.xpath("//rz-main-page-sidebar//a[contains(@href,'computers-notebooks')]"));
         sectionLaptopAndComputers.click();
-
         WebElement sectionLaptops = driver
                 .findElement(By.xpath("//a[@class='tile-cats__picture' and contains(@href,'notebooks')]"));
         sectionLaptops.click();
-
         WebElement checkBoxSellerRozetka = webDriverWait
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-id='Rozetka']")));
         checkBoxSellerRozetka.click();
-
         WebElement filterUpperPrice = webDriverWait
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//fieldset//input[@formcontrolname='max']")));
         filterUpperPrice.clear();
         filterUpperPrice.sendKeys("100000");
-
         WebElement submitFilterBtn = driver.findElement(By.xpath("//fieldset//button"));
         submitFilterBtn.click();
-
-
         WebElement firstLaptopWithTopSales = driver.findElement
                 (By.xpath("//span[contains(@class,'promo-label_type_popularity')]/following-sibling::a"));
         js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", firstLaptopWithTopSales);
         firstLaptopWithTopSales.click();
-
         WebElement textTopSellerOnProduct = driver.findElement
                 (By.xpath("//span[contains(@class,'promo-label_type_popularity')]"));
         String ActualTextTopSeller = textTopSellerOnProduct.getText().trim();

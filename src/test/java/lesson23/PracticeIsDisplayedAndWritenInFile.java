@@ -47,9 +47,12 @@ public class PracticeIsDisplayedAndWritenInFile {
         String productPriceText = driver.findElement(By.xpath("//*[contains(@class,'product-price__big')]")).getAttribute("innerText");
 
         if (isStockLabel.isDisplayed() && isStockLabelColor.equals(EXPECTED_IN_STOCK_BTN_COLOR)) {
-            FileWriter fileWriter = new FileWriter("TitleAndPrice.txt");
-            fileWriter.write(productPageTitleText + " - " + productPriceText);
-            fileWriter.close();
+//            FileWriter fileWriter = new FileWriter("TitleAndPrice.txt");
+//            fileWriter.write(productPageTitleText + " - " + productPriceText);
+//            fileWriter.close();
+            try (FileWriter fileWriter = new FileWriter("TitleAndPrice.txt")) {
+                fileWriter.write(productPageTitleText + " - " + productPriceText);
+            }
         }
 
     }

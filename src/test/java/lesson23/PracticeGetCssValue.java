@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+@SuppressWarnings("all")
 public class PracticeGetCssValue {
     final String EXPECTED_BUY_BTN_COLOR = "rgba(0, 160, 70, 1)";
     WebDriver driver;

@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw23TopSales;
+package homeworkTest.hw23TopSales;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

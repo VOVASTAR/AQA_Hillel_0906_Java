@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw25ListOfProducts;
+package homeworkTest.hw25ListOfProducts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

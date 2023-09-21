@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw24AddToCart;
+package homeworkTest.hw24AddToCart;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw26PromotionCarusel;
+package homeworkTest.hw26PromotionCarusel;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;

@@ -41,7 +41,7 @@ public class CheckTopSales {
                 .findElement(By.xpath("//rz-main-page-sidebar//a[contains(@href,'computers-notebooks')]"));
         sectionLaptopAndComputers.click();
         WebElement sectionLaptops = driver
-                .findElement(By.xpath("//a[@class='tile-cats__picture' and contains(@href,'notebooks')]"));
+                .findElement(By.xpath("//rz-list-tile//a[contains(@href,'notebooks')]"));
         sectionLaptops.click();
         WebElement checkBoxSellerRozetka = webDriverWait
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-id='Rozetka']")));

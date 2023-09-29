@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class PracticeSelected extends InitialDriver {
 
     @Test
-    public void selectedTest(){
+    public void selectedTest() {
 
         driver.get("https://rozetka.com.ua/");
         WebElement loginBtn = driver

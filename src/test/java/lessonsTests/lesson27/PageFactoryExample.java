@@ -8,7 +8,7 @@ package lessonsTests.lesson27;
 import lessonsTests.init.InitialDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import ua.page.object.MainPageLogic;
+import ua.page.object.selenium.MainPageLogic;
 
 public class PageFactoryExample extends InitialDriver {
 

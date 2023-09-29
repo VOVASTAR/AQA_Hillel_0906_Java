@@ -14,7 +14,7 @@ public class KeysExample extends InitialDriver {
     public void KeysExample() throws InterruptedException {
         driver.get("https://www.google.com.ua/");
         WebElement input = driver.findElement(By.name("q"));
-        input.sendKeys((Keys.chord(Keys.SHIFT,"Hello")));
+        input.sendKeys((Keys.chord(Keys.SHIFT, "Hello")));
         input.sendKeys(Keys.ENTER);
         sleep(5000);
     }

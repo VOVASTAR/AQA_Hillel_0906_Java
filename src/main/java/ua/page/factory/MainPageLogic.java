@@ -3,9 +3,9 @@ package ua.page.factory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ua.page.object.HeaderLogic;
-import ua.page.object.MainPageLocators;
-import ua.page.object.SearchPageLogic;
+import ua.page.object.selenium.HeaderLogic;
+import ua.page.object.selenium.MainPageLocators;
+import ua.page.object.selenium.SearchPageLogic;
 
 public class MainPageLogic extends MainPageLocators implements HeaderLogic {
 

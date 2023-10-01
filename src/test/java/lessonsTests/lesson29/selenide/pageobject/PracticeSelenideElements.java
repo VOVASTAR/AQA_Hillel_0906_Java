@@ -1,6 +1,5 @@
 package lessonsTests.lesson29.selenide.pageobject;
 
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ua.page.object.selenide.MainPageLogic;

@@ -6,15 +6,19 @@ import java.util.List;
 
 public class ListExample {
     public static void main(String[] args) {
-        arrayAdd();
-        methodGet();
-        methodIndexOf();
-        methodSet();
-        methodIndexOf();
-        methodRemoveByIndex();
-        methodIndexOf();
-        methodRemoveByObject();
-        methodIndexOf();
+//        arrayAdd();
+//        methodGet();
+//        methodIndexOf();
+//        methodSet();
+//        methodIndexOf();
+//        methodRemoveByIndex();
+//        methodIndexOf();
+//        methodRemoveByObject();
+//        methodIndexOf();
+
+        linkedAdd();
+        System.out.println(myLinkedList.get(1));
+        System.out.println(myLinkedList.size());
     }
 
     static ArrayList<String> myArrayList;

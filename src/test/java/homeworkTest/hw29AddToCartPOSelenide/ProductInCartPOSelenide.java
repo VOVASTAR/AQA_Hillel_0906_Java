@@ -27,28 +27,7 @@ public class ProductInCartPOSelenide {
 
         new LaptopSearchPageLogic()
                 .goToTheCartI()
-                .getProductTitleInCart(titleOfItem)
-                .quantityOfProductInCart("1");
-
-//
-//        HeaderLogic headerCart = new HeaderLogic(driver);
-//        String quantityOfProductOnCartIcon = headerCart.quantityOfItemInCart();
-//        Assert.assertEquals(quantityOfProductOnCartIcon, "", "Cart doesn`t empty");
-//
-//        String titleTextFirstLaptop = new MainPageLogic(driver)
-//                .clickOnCategoryLaptopAndComputers()
-//                .clickOnCategoryLaptop()
-//                .addToCartFirstLaptop()
-//                .isItemInCart()
-//                .getTitleOfProduct();
-//
-//        quantityOfProductOnCartIcon = headerCart.quantityOfItemInCart();
-//
-//        CartLogic cart = headerCart.goToTheCart();
-//        String titleTextFirstLaptopInCart = cart.getProductTitleInCart();
-//        String quantityOfProductInCart = cart.quantityOfProductInCart();
-//
-//        Assert.assertEquals(titleTextFirstLaptop, titleTextFirstLaptopInCart, "Titles doesn't equals");
-//        Assert.assertEquals(quantityOfProductOnCartIcon, quantityOfProductInCart, "Cart doesn`t empty");
+                .checkProductTitleInCart(titleOfItem)
+                .checkQuantityOfProductInCart("1");
     }
 }

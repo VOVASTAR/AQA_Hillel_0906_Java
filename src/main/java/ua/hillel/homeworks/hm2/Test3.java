@@ -13,7 +13,7 @@ public class Test3 {
         System.out.println(maks4.maks);
         System.out.println(m4);
 
-       maks4.igra(500);
+        maks4.igra(500);
         System.out.println();
     }
 }

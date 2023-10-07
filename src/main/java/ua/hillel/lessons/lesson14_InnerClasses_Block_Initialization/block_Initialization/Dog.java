@@ -29,6 +29,10 @@ public class Dog {
         this.age = age;
     }
 
+    public static String getLastName() {
+        return lastName;
+    }
+
     public String getName() {
         return name;
     }
@@ -39,9 +43,5 @@ public class Dog {
 
     public int getAge() {
         return age;
-    }
-
-    public static String getLastName() {
-        return lastName;
     }
 }

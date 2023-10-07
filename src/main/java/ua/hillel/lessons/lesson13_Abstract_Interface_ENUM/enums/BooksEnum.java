@@ -1,5 +1,12 @@
 package ua.hillel.lessons.lesson13_Abstract_Interface_ENUM.enums;
 
+enum Type {
+    SCIENCE,
+    BELLETRE,
+    PHANTASY,
+    SCIENCE_FICTION
+}
+
 public class BooksEnum {
 
     public static void main(String[] args) {
@@ -36,12 +43,5 @@ class Book {
         this.name = name;
         this.author = author;
     }
-}
-
-enum Type {
-    SCIENCE,
-    BELLETRE,
-    PHANTASY,
-    SCIENCE_FICTION
 }
 

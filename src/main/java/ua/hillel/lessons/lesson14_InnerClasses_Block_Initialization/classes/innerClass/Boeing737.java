@@ -3,8 +3,8 @@ package ua.hillel.lessons.lesson14_InnerClasses_Block_Initialization.classes.inn
 public class Boeing737 {
 
 
-    private int manufactureYear;
     private static int maxPassengersCount = 300;
+    private int manufactureYear;
 
     public Boeing737(int manufactureYear) {
         this.manufactureYear = manufactureYear;
@@ -25,13 +25,6 @@ public class Boeing737 {
             return maxPassengersCount;
         }
 
-        @Override
-        public String toString() {
-            return "Drawing{" +
-                    "id=" + id +
-                    '}';
-        }
-
         public static void main(String[] args) {
 
             for (int i = 1; i < 6; i++) {
@@ -39,6 +32,13 @@ public class Boeing737 {
                 Boeing737.Drawing drawing = new Boeing737.Drawing(i);
                 System.out.println(drawing);
             }
+        }
+
+        @Override
+        public String toString() {
+            return "Drawing{" +
+                    "id=" + id +
+                    '}';
         }
     }
 }

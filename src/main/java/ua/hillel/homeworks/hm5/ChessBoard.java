@@ -7,7 +7,7 @@ public class ChessBoard {
         for (int i = 0; i < board.length; i++) {
             System.out.println();
             for (int k = 0; k < board[i].length; k++) {
-                if (i%2==k%2) {
+                if (i % 2 == k % 2) {
                     board[i][k] = "Б ";
                 } else {
                     board[i][k] = "Ч ";

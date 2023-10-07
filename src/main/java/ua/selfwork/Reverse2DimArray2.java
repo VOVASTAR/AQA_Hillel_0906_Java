@@ -1,8 +1,5 @@
 package ua.selfwork;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class Reverse2DimArray2 {
     public static void main(String[] args) {
 

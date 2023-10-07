@@ -18,6 +18,6 @@ public class TaskCountWord {
             }
 
         }
-        System.out.println("You enter " +count+" words");
+        System.out.println("You enter " + count + " words");
     }
 }

@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ListExample {
+    static ArrayList<String> myArrayList;
+    static LinkedList<String> myLinkedList;
+
     public static void main(String[] args) {
 //        arrayAdd();
 //        methodGet();
@@ -20,9 +23,6 @@ public class ListExample {
         System.out.println(myLinkedList.get(1));
         System.out.println(myLinkedList.size());
     }
-
-    static ArrayList<String> myArrayList;
-    static LinkedList<String> myLinkedList;
 
     public static void methodIndexOf() {
         System.out.println(myArrayList.indexOf("Alex"));

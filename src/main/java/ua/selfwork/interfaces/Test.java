@@ -18,7 +18,8 @@ public class Test {
         putputInfo(animal1);
         putputInfo(person1);
     }
-    public static void putputInfo(Info info){
+
+    public static void putputInfo(Info info) {
         info.showInfo();
     }
 }

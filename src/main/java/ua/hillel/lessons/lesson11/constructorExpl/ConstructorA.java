@@ -2,6 +2,7 @@ package ua.hillel.lessons.lesson11.constructorExpl;
 
 public class ConstructorA {
     int value;
+
     public ConstructorA() {
         System.out.println("WithOut params A");
     }
@@ -11,7 +12,7 @@ public class ConstructorA {
         this.value = value;
     }
 
-    public void sayHello(int value){
-        System.out.println("Hello "+ value);
+    public void sayHello(int value) {
+        System.out.println("Hello " + value);
     }
 }

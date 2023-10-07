@@ -5,8 +5,8 @@ public class ReverseExample {
 
     }
 
-    public static void reverseArray(){
-        String [] str = {"Hello", "my","name","is","Maks"};
+    public static void reverseArray() {
+        String[] str = {"Hello", "my", "name", "is", "Maks"};
 
     }
 }

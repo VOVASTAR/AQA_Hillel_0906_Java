@@ -10,12 +10,12 @@ public class JavaTest {
         System.out.println(2 + 2 * 2);
 
         String s1 = "a1";
-        String s2 = "A"+1;
+        String s2 = "A" + 1;
         System.out.println(s1.equals(s2));
-        System.out.println(s1==s2);
+        System.out.println(s1 == s2);
 
         String s = "hello";
-        s= s.concat("world");
+        s = s.concat("world");
         System.out.println(s);
     }
 

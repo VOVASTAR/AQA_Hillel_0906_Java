@@ -2,7 +2,7 @@ package ua.hillel.lessons.lesson14_InnerClasses_Block_Initialization.block_Initi
 
 public class Launch {
     public static void main(String[] args) {
-        Dog dog = new Dog("Barsik","Spitz",7);
+        Dog dog = new Dog("Barsik", "Spitz", 7);
         System.out.println(dog.getAge());
         Dog dog2 = new Dog();
         System.out.println(dog2.getAge());

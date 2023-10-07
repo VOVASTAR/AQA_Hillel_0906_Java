@@ -1,6 +1,6 @@
 package ua.hillel.lessons.lesson8_OOP.polymorfism.person;
 
-public class Program{
+public class Program {
 
     public static void main(String[] args) {
 
@@ -15,6 +15,6 @@ public class Program{
         Boss boss1 = (Boss) boss;
         boss1.displayBoss();
         boss.display();
-        ((Boss)boss).displayBoss();
+        ((Boss) boss).displayBoss();
     }
 }

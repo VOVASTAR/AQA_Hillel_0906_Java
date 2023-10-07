@@ -10,7 +10,8 @@ public class ConstructorB extends ConstructorA {
         super(value);
         System.out.println("With params B = " + value);
     }
-    public void test(){
+
+    public void test() {
         sayHello(super.value);
     }
 

@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 public class TreeSetExample {
     public static void main(String[] args) {
-        Set<String>myTreeSet=new TreeSet<>();
+        Set<String> myTreeSet = new TreeSet<>();
         myTreeSet.add("C");
         myTreeSet.add("D");
         myTreeSet.add("Q");

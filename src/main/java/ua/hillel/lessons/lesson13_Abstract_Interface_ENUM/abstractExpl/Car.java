@@ -2,6 +2,10 @@ package ua.hillel.lessons.lesson13_Abstract_Interface_ENUM.abstractExpl;
 
 public abstract class Car {
 
+    static void test() {
+
+    }
+
     abstract String maxSpeed();
 
     abstract void drive();
@@ -9,10 +13,6 @@ public abstract class Car {
     abstract void brake();
 
     abstract void repair();
-
-    static  void test(){
-
-    }
 
     void countEheels() {
         System.out.println("4");

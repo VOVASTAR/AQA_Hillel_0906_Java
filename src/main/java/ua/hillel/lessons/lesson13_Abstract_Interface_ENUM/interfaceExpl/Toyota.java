@@ -1,6 +1,6 @@
 package ua.hillel.lessons.lesson13_Abstract_Interface_ENUM.interfaceExpl;
 
-public class Toyota implements CarInter{
+public class Toyota implements CarInter {
     @Override
     public void passengerPlaces() {
         System.out.println("4 places ");

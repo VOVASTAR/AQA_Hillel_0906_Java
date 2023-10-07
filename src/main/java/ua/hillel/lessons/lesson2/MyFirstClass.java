@@ -7,8 +7,8 @@ public class MyFirstClass {
         System.out.println("Hello world");
         int k = 10;
         System.out.println(k);
-   int j;
-   j=5;
+        int j;
+        j = 5;
         System.out.println(j);
 
 

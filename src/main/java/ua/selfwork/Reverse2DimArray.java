@@ -24,11 +24,11 @@ public class Reverse2DimArray {
     }
 
     public static void reverse(int[][] array) {
-        for (int i =0;i< array.length/2;i++){
-            for (int j=0;j< array[i].length; j++){
-                int t = array[array.length-i-1][array[i].length - j-1];
-                array[i][j] = array[array.length-i-1][array[i].length - j-1];
-                array[array.length-i-1][array[i].length - j-1] =t;
+        for (int i = 0; i < array.length / 2; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                int t = array[array.length - i - 1][array[i].length - j - 1];
+                array[i][j] = array[array.length - i - 1][array[i].length - j - 1];
+                array[array.length - i - 1][array[i].length - j - 1] = t;
             }
         }
         System.out.println(array[4][4]);

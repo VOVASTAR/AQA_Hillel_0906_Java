@@ -14,7 +14,7 @@ public class Main {
 
         Dancer electricBoogieDancer = new ElectricBoogieDancer("Игорь", 20); // восходящее преобразование к базовому типу
 
-        ((BreakDankDancer)breakDanceDancer).lowBreak("Uxyyyy");
+        ((BreakDankDancer) breakDanceDancer).lowBreak("Uxyyyy");
 
         List<Dancer> discotheque = Arrays.asList(dancer, breakDanceDancer, electricBoogieDancer, breakDanceDancer2);
         for (Dancer d : discotheque) {

@@ -26,6 +26,10 @@ public class Bicycle {
 
         public static int speed = 10;
 
+        public static void staticTurn() {
+            System.out.println("void static");
+        }
+
         public void right() {
             System.out.println("Руль вправо!");
         }
@@ -33,10 +37,6 @@ public class Bicycle {
         public void left() {
 
             System.out.println("Руль влево");
-        }
-
-        public static void staticTurn() {
-            System.out.println("void static");
         }
     }
 

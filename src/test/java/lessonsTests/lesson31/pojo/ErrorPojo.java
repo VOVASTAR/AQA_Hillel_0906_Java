@@ -1,4 +1,4 @@
-package lessonsTests.lesson31;
+package lessonsTests.lesson31.pojo;
 
 public class ErrorPojo {
 

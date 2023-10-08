@@ -1,4 +1,4 @@
-package lessonsTests.lesson31;
+package lessonsTests.lesson31.pojo;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

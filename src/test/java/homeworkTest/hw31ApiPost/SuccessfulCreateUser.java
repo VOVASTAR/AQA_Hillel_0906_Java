@@ -3,7 +3,9 @@ package homeworkTest.hw31ApiPost;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static homeworkTest.hw31ApiPost.Specification.*;
+import java.time.Clock;
+
+import static homeworkTest.hw31ApiPost.SpecificationHw.*;
 import static io.restassured.RestAssured.given;
 
 public class SuccessfulCreateUser {
@@ -14,15 +16,23 @@ public class SuccessfulCreateUser {
     public void createUserTest() {
         configuration(requestSpecification(BASE_URL), responseSpecification(201));
 
-        UserDataCreate user = new UserDataCreate("morpheus", "leader");
+        UserDataCreateHw user = new UserDataCreateHw("morpheus", "leader");
 
-        UserCreated userCreated = given()
+        UserCreatedHw userCreated = given()
                 .body(user)
                 .when()
                 .post("api/users")
                 .then().log().all()
-                .extract().as(UserCreated.class);
+                .extract().as(UserCreatedHw.class);
 
-        Assert.assertEquals(userCreated.getId(),"624");
+
+        int a = Integer.parseInt(userCreated.getId());
+        String currentTime = Clock.systemUTC().instant().toString();
+        String regex = "\\..*";
+
+        Assert.assertEquals(userCreated.getName(), user.getName());
+        Assert.assertEquals(userCreated.getJob(), user.getJob());
+        Assert.assertTrue(a < 1000);
+        Assert.assertEquals(userCreated.getCreatedAt().replaceAll(regex, ""), currentTime.replaceAll(regex, ""));
     }
 }

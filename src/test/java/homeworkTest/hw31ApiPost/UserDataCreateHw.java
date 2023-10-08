@@ -1,14 +1,14 @@
 package homeworkTest.hw31ApiPost;
 
-public class UserDataCreate {
+public class UserDataCreateHw {
 
     private String name;
     private String job;
 
-    public UserDataCreate() {
+    public UserDataCreateHw() {
     }
 
-    public UserDataCreate(String name, String job) {
+    public UserDataCreateHw(String name, String job) {
         this.name = name;
         this.job = job;
     }

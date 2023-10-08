@@ -7,7 +7,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-public class Specification {
+public class SpecificationHw {
 
     public static RequestSpecification requestSpecification(String url) {
         return new RequestSpecBuilder()

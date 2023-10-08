@@ -1,6 +1,7 @@
-package lessonsTests.lesson31;
+package lessonsTests.lesson31.pojo;
 
 
+import lessonsTests.lesson31.UserForReg;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

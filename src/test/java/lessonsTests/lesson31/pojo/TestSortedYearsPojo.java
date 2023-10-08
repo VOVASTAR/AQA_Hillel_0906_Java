@@ -1,6 +1,7 @@
-package lessonsTests.lesson31;
+package lessonsTests.lesson31.pojo;
 
 
+import lessonsTests.lesson31.YearsData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ public class TestSortedYearsPojo {
     private final String BASE_URL = "https://reqres.in/";
 
     @Test
-    public void testRegistrationUnSuccess() {
+    public void testListResource() {
         configureSpec(requestSpecification(BASE_URL), responseSpecification(200));
         List<YearsData> yearsDataList = given()
                 .when()

@@ -26,13 +26,13 @@ public class SuccessfulCreateUser {
                 .extract().as(UserCreatedHw.class);
 
 
-        int a = Integer.parseInt(userCreated.getId());
+        int userIdNumber = Integer.parseInt(userCreated.getId());
         String currentTime = Clock.systemUTC().instant().toString();
         String regex = "\\..*";
 
         Assert.assertEquals(userCreated.getName(), user.getName());
         Assert.assertEquals(userCreated.getJob(), user.getJob());
-        Assert.assertTrue(a < 1000);
+        Assert.assertTrue(userIdNumber < 1000);
         Assert.assertEquals(userCreated.getCreatedAt().replaceAll(regex, ""), currentTime.replaceAll(regex, ""));
     }
 }

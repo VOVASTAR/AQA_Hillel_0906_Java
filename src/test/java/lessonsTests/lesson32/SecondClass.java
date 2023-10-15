@@ -1,10 +1,18 @@
 package lessonsTests.lesson32;
 
 import io.qameta.allure.*;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ua.page.object.selenide.MainPageLogic;
 
+import static com.codeborne.selenide.Selenide.open;
+
 public class SecondClass {
+
+    @BeforeTest
+    public void before() {
+        open("https://www.rozetka.com.ua/");
+    }
 
     @Test()
     @Flaky()

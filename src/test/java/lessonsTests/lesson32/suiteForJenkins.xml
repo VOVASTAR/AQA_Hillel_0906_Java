@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suiteForJenkins" verbose="10" parallel="tests" thread-count="4">
+
+    <listeners>
+        <listener class-name="lessonsTests.lesson19.MyListener"/>
+    </listeners>
+
+    <test name="success"> <!-- name любое-->
+        <classes>
+            <class name="lessonsTests.lesson32.FirstClass"/>
+            <class name="lessonsTests.lesson32.ThirdClassWithSteps"/>
+        </classes>
+    </test>
+
+    <test name="fail"> <!-- name любое-->
+        <classes>
+            <class name="lessonsTests.lesson32.SecondClass"/>
+        </classes>
+    </test>
+
+</suite>

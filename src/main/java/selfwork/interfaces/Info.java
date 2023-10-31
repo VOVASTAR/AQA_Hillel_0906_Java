@@ -1,4 +1,4 @@
-package ua.selfwork.interfaces;
+package selfwork.interfaces;
 
 public interface Info {
     void showInfo();

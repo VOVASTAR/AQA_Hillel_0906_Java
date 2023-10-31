@@ -1,4 +1,4 @@
-package ua.selfwork;
+package selfwork;
 
 public class Reverse2DimArray2 {
     public static void main(String[] args) {

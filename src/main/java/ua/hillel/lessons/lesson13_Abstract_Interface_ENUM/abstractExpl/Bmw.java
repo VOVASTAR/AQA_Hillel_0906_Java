@@ -2,7 +2,6 @@ package ua.hillel.lessons.lesson13_Abstract_Interface_ENUM.abstractExpl;
 
 public class Bmw extends Car {
 
-
     @Override
     String maxSpeed() {
         return "300";
@@ -20,6 +19,6 @@ public class Bmw extends Car {
 
     @Override
     void repair() {
-
     }
+
 }

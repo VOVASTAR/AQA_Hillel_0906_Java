@@ -1,4 +1,4 @@
-package ua.selfwork.collection;
+package selfwork.collection;
 
 import java.util.Collections;
 import java.util.Iterator;

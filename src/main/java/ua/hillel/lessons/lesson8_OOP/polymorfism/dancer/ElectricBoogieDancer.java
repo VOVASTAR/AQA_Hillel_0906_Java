@@ -11,4 +11,12 @@ public class ElectricBoogieDancer extends Dancer {
         System.out.println(toString() + "Я танцую электрик буги!");
     }
 
+    private void sing(){
+
+    }
+
+    private void sing(String song){
+
+    }
+
 }

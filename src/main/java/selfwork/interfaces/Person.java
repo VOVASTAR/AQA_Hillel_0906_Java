@@ -1,4 +1,4 @@
-package ua.selfwork.interfaces;
+package selfwork.interfaces;
 
 public class Person implements Info {
     public String name;

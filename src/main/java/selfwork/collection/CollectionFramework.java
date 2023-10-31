@@ -1,4 +1,4 @@
-package ua.selfwork.collection;
+package selfwork.collection;
 
 
 public class CollectionFramework {

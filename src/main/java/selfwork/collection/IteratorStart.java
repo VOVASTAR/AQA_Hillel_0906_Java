@@ -15,9 +15,10 @@ public class IteratorStart {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
+            iterator.remove();
         }
         for (Integer it : list) {
-            System.out.println(it);
+            System.out.println(it + " 1");
         }
     }
 }
